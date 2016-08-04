@@ -1,0 +1,106 @@
+.top_nav{
+	width:100%;
+	text-align:center;
+	position:fixed;
+	top:0px;
+	background-color:#222332;
+}
+.top_nav{
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.top_nav>li{
+	font-size:22px;
+	display:inline-block;
+	padding:25px;
+}
+
+.top_nav>li:hover{
+	width:300px;
+	transition: width 2s;
+}
+
+
+.mainc{
+	height:1000px;
+	background-color:rgb(127,127,127);
+	margin-left:100px;
+	margin-top:100px;
+	margin-right:100px;
+}
+/*
+FROM HERE THE TRANSITION BEGINS*/
+
+.my{
+	width:100px;
+	height:100px;
+	background-color:red;
+	transition: width 2s;
+}
+
+.my:hover{
+	width:300px;
+}
+
+
+.sub{
+	width:100px;
+	height:50px;
+	background-color:blue;
+	transition: width 3s;
+	transition-timing-function:easein;
+}
+
+.sub:hover{
+	width:50px;
+	height:50px;
+	background-color:purple;
+}
+
+.body{
+	width:100px;
+	height:100px;
+	background:blue;
+	padding:50px;
+	transition: width=2s, height=4s, transform=6s;
+}
+
+.body:hover{
+	width:400px;
+	height:500px;
+	transform: matrix(1,-0.3,0,1,0,0);
+}
+
+.pre{
+	width:500px;
+	height:500px;
+	background-color:yellow; 
+
+	animation-name:rotate_and_move;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes rotate_and_move{
+	0%{
+		transform:rotate(0deg);
+	}
+	50%{
+		transform:rotate(90deg);
+		transform:skewX(30deg);
+	}
+	100%{
+		transform:rotate(-90deg);
+		transform:skewX(10deg);
+	}
+
+}
+
+
+
+#deer:hover{
+	transform:scale(.2,.2);
+}
