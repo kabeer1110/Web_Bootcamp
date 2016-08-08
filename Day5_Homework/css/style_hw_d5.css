@@ -34,7 +34,7 @@ width:100%;
 	height:70px;
 	background-color:purple;
 	padding:50px;
-	transition: width=2s, height=4s, transform=6s;
+	transition: width 2s, height 4s, transform 6s;
 }
 
 .body22{
